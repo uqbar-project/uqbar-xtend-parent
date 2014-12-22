@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<properties>
+		<version>2.7.3</version>
+	</properties>
+
+	<modelVersion>4.0.0</modelVersion>
+	<name>uqbar-xtend-parent</name>
+	<artifactId>uqbar-xtend-parent</artifactId>
+	<version>${version}</version>
+	<packaging>pom</packaging>
+
+	<parent>
+		<groupId>org.uqbar-project</groupId>
+		<artifactId>uqbar-parent-project</artifactId>
+		<version>1.7</version>
+	</parent>
+
+	<scm>
+		<connection>scm:hg:${scm.hgServer}/${project.artifactId}</connection>
+		<developerConnection>scm:hg:${scm.hgServer}/${project.artifactId}</developerConnection>
+		<url>scm:hg:${scm.hgServer}/${project.artifactId}</url>
+	</scm>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.xtend</groupId>
+				<artifactId>xtend-maven-plugin</artifactId>
+				<version>${version}</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>compile</goal>
+							<goal>testCompile</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.xtend</groupId>
+			<artifactId>org.eclipse.xtend.lib</artifactId>
+			<version>${version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>
