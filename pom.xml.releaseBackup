@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<name>uqbar-xtend-parent</name>
 	<artifactId>uqbar-xtend-parent</artifactId>
-	<version>2.9.1</version>
+	<version>2.7.3-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -17,15 +17,15 @@
 		<connection>scm:git:${scm.gitServer}/${project.artifactId}</connection>
 		<developerConnection>scm:git:${scm.gitServer}/${project.artifactId}</developerConnection>
 		<url>scm:git:${scm.gitServer}/${project.artifactId}</url>
-		<tag>uqbar-xtend-parent-2.9.1</tag>
-	</scm>
+	  	<tag>HEAD</tag>
+  	</scm>
 
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.eclipse.xtend</groupId>
 				<artifactId>xtend-maven-plugin</artifactId>
-				<version>${project.version}</version>
+				<version>2.7.2</version>
 				<executions>
 					<execution>
 						<goals>
@@ -42,7 +42,7 @@
 		<dependency>
 			<groupId>org.eclipse.xtend</groupId>
 			<artifactId>org.eclipse.xtend.lib</artifactId>
-			<version>${project.version}</version>
+			<version>2.7.3</version>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
