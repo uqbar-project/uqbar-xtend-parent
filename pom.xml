@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<name>uqbar-xtend-parent</name>
 	<artifactId>uqbar-xtend-parent</artifactId>
-	<version>2.13.3-SNAPSHOT</version>
+	<version>2.17.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -13,14 +13,14 @@
 	</parent>
 
 	<properties>
-		<xtend.version>2.13.0</xtend.version>
+		<xtend.version>2.17.0.M3</xtend.version>
 	</properties>
 
 	<scm>
 		<connection>scm:git:${scm.gitServer}/${project.artifactId}</connection>
 		<developerConnection>scm:git:${scm.gitServer}/${project.artifactId}</developerConnection>
 		<url>scm:git:${scm.gitServer}/${project.artifactId}</url>
-		<tag>uqbar-xtend-parent-2.13.0</tag>
+		<tag>uqbar-xtend-parent-2.17.0</tag>
 	</scm>
 
 	<build>
@@ -29,10 +29,10 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.1</version>
+					<version>3.8.0</version>
 					<configuration>
-						<source>1.8</source>
-						<target>1.8</target>
+						<source>1.11</source>
+						<target>1.11</target>
 					</configuration>
 				</plugin>
 			</plugins>
@@ -149,7 +149,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>4.13-beta-2</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
